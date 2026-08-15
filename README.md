@@ -12,7 +12,9 @@ A production-style **CI/CD pipeline** built using **Jenkins, Docker, GitHub, and
 The pipeline automatically builds and deploys a Dockerized web application whenever changes are pushed to the GitHub repository.
 
 ## Architecture
-
+<p align="center">
+  <img src="Jenkins Architecture.png" alt="Jenkins Architecture" width="900">
+</p>
 
 
 ## Tech stack
