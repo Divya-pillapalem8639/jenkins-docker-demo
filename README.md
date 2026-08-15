@@ -136,11 +136,6 @@ docker run -d \\
 ```
 
 ## Screenshots
-
-### Architecture
-
-![Architecture](screenshots/architecture.png)
-
 ### Jenkins dashboard
 
 ![Jenkins Dashboard](screenshots/jenkins-dashboard.png)
