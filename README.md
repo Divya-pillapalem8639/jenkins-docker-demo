@@ -1,5 +1,4 @@
 # Jenkins CI/CD Pipeline with Docker on AWS EC2
-
 <p align="center">
   <img src="https://img.shields.io/badge/AWS-EC2-orange?logo=amazonaws" />
   <img src="https://img.shields.io/badge/Jenkins-CI%2FCD-red?logo=jenkins" />
@@ -8,7 +7,6 @@
 </p>
 
 ## Project overview
-
 A production-style **CI/CD pipeline** built using **Jenkins, Docker, GitHub, and AWS EC2**.
 
 The pipeline automatically builds and deploys a Dockerized web application whenever changes are pushed to the GitHub repository.
