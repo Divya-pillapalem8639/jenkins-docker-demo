@@ -138,31 +138,27 @@ docker run -d \\
 ## Screenshots
 ### Jenkins dashboard
 
-![Jenkins Dashboard](screenshots/jenkins-dashboard.png)
+![Jenkins Dashboard](Screenshots/Jenkins Dashboard.png)
 
 ### Pipeline configuration
 
-![Pipeline Configuration](screenshots/pipeline-config.png)
+![Pipeline Configuration](Screenshots/pipeline configuration.png)
 
 ### Successful build
 
-![Build Success](screenshots/build-success.png)
+![Build Success](Screenshots/Build-success.png)
 
 ### Console output
 
-![Console Output](screenshots/console-output.png)
+![Console Output](Screenshots/console output.png)
 
 ### Docker images
 
-![Docker Images](screenshots/docker-images.png)
-
-### Running container
-
-![Docker PS](screenshots/docker-ps.png)
+![Docker Images](Screenshots/Docker images.png)
 
 ### Deployed website
 
-![Website](screenshots/website.png)
+![Website](Screenshots/Website.png)
 
 ## AWS configuration
 
