@@ -46,13 +46,11 @@ jenkins-docker-demo/
 │── Jenkinsfile
 │── README.md
 └── screenshots/
-    ├── architecture.png
-    ├── jenkins-dashboard.png
+    ├── Jenkins-Dashboard.png
     ├── pipeline-config.png
-    ├── build-success.png
+    ├── Build-success.png
     ├── console-output.png
-    ├── docker-images.png
-    ├── docker-ps.png
+    ├── Docker-images.png
     └── website.png
 ```
 
@@ -138,23 +136,23 @@ docker run -d \\
 ## Screenshots
 ### Jenkins dashboard
 
-![Jenkins Dashboard](Screenshots/Jenkins Dashboard.png)
+![Jenkins Dashboard](Screenshots/Jenkins-Dashboard.png)
 
 ### Pipeline configuration
 
-![Pipeline Configuration](Screenshots/pipeline configuration.png)
+![Pipeline Configuration](Screenshots/Pipeline-config.png)
 
 ### Successful build
 
-![Build Success](Screenshots/Build success.png)
+![Build Success](Screenshots/Build-success.png)
 
 ### Console output
 
-![Console Output](Screenshots/console output.png)
+![Console Output](Screenshots/console-output.png)
 
 ### Docker images
 
-![Docker Images](Screenshots/Docker images.png)
+![Docker Images](Screenshots/Docker-images.png)
 
 ### Deployed website
 
