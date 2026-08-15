@@ -13,28 +13,7 @@ The pipeline automatically builds and deploys a Dockerized web application whene
 
 ## Architecture
 
-```text
-Developer
-    │
-    │ git push
-    ▼
-GitHub Repository
-    │
-    ▼
-Jenkins Pipeline
-    │
-    ├── Checkout Code
-    ├── Build Docker Image
-    └── Deploy Docker Container
-    ▼
-Docker Engine (EC2)
-    │
-    ▼
-Nginx Container
-    │
-    ▼
-Live Website
-```
+
 
 ## Tech stack
 
