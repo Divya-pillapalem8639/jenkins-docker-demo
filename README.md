@@ -146,7 +146,7 @@ docker run -d \\
 
 ### Successful build
 
-![Build Success](Screenshots/Build-success.png)
+![Build Success](Screenshots/Build success.png)
 
 ### Console output
 
