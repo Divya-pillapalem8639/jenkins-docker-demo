@@ -49,10 +49,13 @@ jenkins-docker-demo/
 └── screenshots/
     ├── Jenkins-Dashboard.png
     ├── pipeline-config.png
+    ├── GitHub-WebHook-Configuration.png
+    ├── Automatically-Triggered.png
     ├── Build-success.png
     ├── console-output.png
     ├── Docker-images.png
-    └── website.png
+    └──website.png
+    
 ```
 
 ## CI/CD workflow
@@ -195,6 +198,14 @@ docker run -d \\
 
 ![Pipeline Configuration](Screenshots/Pipeline-config.png)
 
+### GitHub Webhook configuration
+
+![GitHub Webhook configuration](Screenshots/GitHub-WebHook-Configuration.png)
+
+### Automatically triggered Jenkins build
+
+![Automatically triggered Jenkins build](Screenshots/Automatically-Triggered.png)
+
 ### Successful build
 
 ![Build Success](Screenshots/Build-success.png)
@@ -272,6 +283,7 @@ permission denied while trying to connect to the Docker daemon socket
 * Docker containerization
 * Jenkins automation
 * GitHub SCM integration
+* GitHub Webhook automation
 * Docker volume persistence
 * Docker socket mounting
 * AWS EC2 deployment
@@ -284,10 +296,10 @@ permission denied while trying to connect to the Docker daemon socket
 * Implemented Jenkins Pipeline as Code using a Jenkinsfile.
 * Deployed Jenkins in Docker with host Docker integration.
 * Resolved Docker daemon permission and deployment issues.
+* Implemented GitHub Webhook integration to automatically trigger Jenkins CI/CD pipelines on code pushes.
 
 ## Future improvements
 
-* GitHub Webhooks
 * Docker Hub integration
 * Multi-stage Docker builds
 * Nginx reverse proxy
