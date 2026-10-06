@@ -11,7 +11,7 @@ A production-style CI/CD pipeline built using Jenkins, Docker, GitHub, and AWS E
 The pipeline automatically builds and deploys a Dockerized web application whenever changes are pushed to the GitHub repository. A GitHub webhook triggers the Jenkins pipeline, which builds the Docker image and deploys the updated application container on an AWS EC2 instance.
 ## Architecture
 <p align="center">
-  <img src="Jenkins-Architecture.png" alt="Jenkins Architecture" width="900">
+  <img src="Jenkins-Architecture.png" alt="Jenkins-Architecture" width="900">
 </p>
 
 
