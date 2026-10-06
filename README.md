@@ -36,6 +36,7 @@ The pipeline automatically builds and deploys a Dockerized web application whene
 * Automatic container deployment
 * GitHub integration
 * AWS EC2 hosting
+* Webhook CI/CD tested
 
 ## Project structure
 
