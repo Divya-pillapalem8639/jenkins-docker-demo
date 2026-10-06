@@ -7,10 +7,8 @@
 </p>
 
 ## Project overview
-A production-style **CI/CD pipeline** built using **Jenkins, Docker, GitHub, and AWS EC2**.
-
-The pipeline automatically builds and deploys a Dockerized web application whenever changes are pushed to the GitHub repository.
-
+A production-style CI/CD pipeline built using Jenkins, Docker, GitHub, and AWS EC2.
+The pipeline automatically builds and deploys a Dockerized web application whenever changes are pushed to the GitHub repository. A GitHub webhook triggers the Jenkins pipeline, which builds the Docker image and deploys the updated application container on an AWS EC2 instance.
 ## Architecture
 <p align="center">
   <img src="Jenkins Architecture.png" alt="Jenkins Architecture" width="900">
@@ -23,6 +21,7 @@ The pipeline automatically builds and deploys a Dockerized web application whene
 * Docker
 * Jenkins (Docker container)
 * Git & GitHub
+* GitHub WebHooks
 * Nginx
 * HTML
 * Jenkins Pipeline (Groovy)
@@ -34,9 +33,10 @@ The pipeline automatically builds and deploys a Dockerized web application whene
 * Docker-based Jenkins deployment
 * Automatic Docker image build
 * Automatic container deployment
-* GitHub integration
+* GitHub Integration
+* GitHub webhook-triggered pipeline
 * AWS EC2 hosting
-* Webhook CI/CD tested
+
 
 ## Project structure
 
@@ -56,6 +56,19 @@ jenkins-docker-demo/
 ```
 
 ## CI/CD workflow
+Trigger: GitHub Webhook
+
+Whenever the developer pushes changes to the GitHub repository, a GitHub webhook sends a notification to Jenkins and automatically triggers the pipeline.
+
+Developer
+    ↓
+GitHub Repository
+    ↓ Push
+GitHub Webhook
+    ↓
+Jenkins
+    ↓
+CI/CD Pipeline
 
 ### Stage 1: Checkout
 
@@ -78,6 +91,45 @@ docker stop jenkins-demo-container || true
 docker rm jenkins-demo-container || true
 docker run -d --name jenkins-demo-container -p 80:80 jenkins-demo
 ```
+### Complete workflow
+GitHub Push
+    ↓
+GitHub Webhook
+    ↓
+Jenkins Pipeline
+    ↓
+Checkout
+    ↓
+Docker Image Build
+    ↓
+Container Deployment
+    ↓
+Nginx
+    ↓
+AWS EC2
+    ↓
+Web Application
+### GitHub Webhook
+A GitHub webhook is configured to automatically trigger the Jenkins pipeline whenever changes are pushed to the repository.
+
+## Webhook configuration
+# Event: Push
+# Content type: application/json
+# Trigger: Jenkins GitHub hook trigger for GITScm polling
+## Webhook flow
+GitHub Repository
+       ↓
+   Push Event
+       ↓
+ GitHub Webhook
+       ↓
+     Jenkins
+       ↓
+ Jenkins Pipeline
+       ↓
+ Docker Build & Deployment
+
+This enables automated CI/CD without manually starting the Jenkins build.
 
 ## Dockerfile
 
